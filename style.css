@@ -1,0 +1,40 @@
+.title {
+    width: 1000px;
+    text-align: center;
+    font-size: 45px ;
+}
+.text {
+    width: 1000px;
+    font-size: 29px;
+}
+.Same {
+    display:inline;
+  }
+.image {
+    display:block;
+}
+.textc {
+    width: 1000px;
+    text-align: center;
+    font-size: 29px;
+}
+.imagec {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 85%; */
+}
+.water {
+    border-radius: 56px;
+}
+.textcd {
+    width: 1000px;
+    text-align: center;
+    font-size: 34px;
+}
+.textq {
+    font-size: 24px;
+}
+.future {
+opacity: 0.1;
+}

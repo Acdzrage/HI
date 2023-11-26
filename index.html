@@ -3,6 +3,7 @@
     <head>
         <title>My first presentation</title>
         <link rel="stylesheet" href="./css/impress-common.css"><!--Leave out, if you don't use impress-common.css-->
+        <link rel="stylesheet" href="style.css">
     </head>
     <body class="impress-not-supported">
         <!-- <div class="fallback-message">
@@ -11,16 +12,98 @@
         </div> -->
 
         <div id="impress">
-            <div id="myFirstSlide" class="step">
-                <h1>My first Slide</h1>
+            <div id="title" class="step title">
+                <h1>pH-Wert</h1>
+                <p>Omar Abouelmaaty und Omar ElSayed</p>
             </div>
-            <div class="step" data-x="200">
-                Hello World
+            <div id="inhaltsverzeichnes" class="step" data-y="1000">
+                <h1 class="title">Inhaltsverzeichnes</h1>
+                <p class="substep text">1. Autoprotolyse</p>
+                <p class="substep text">2. Hist. Hintergrund</p>
+                <p class="substep text">3. Was ist pH-Wert + berechnen</p>
+                <p class="substep text">4. pH-Skala</p>
+                <p class="substep text">5. pOH-Wert</p>
             </div>
-            <div class="step yourClassNameHere" data-x="1000" data-y="1000" data-z="-1000" data-scale="2" data-rotate-z="180">
-                <div class="yourSubClassNameHere">
-                    <h1>Powerful, yet still simple</h1>
+            <div id="fact" class="step" data-y="2000">
+                <h1 class="title">Fakt über Wasser</h1>
+                <img class="imagec water" src="images/water2.jpg" alt="5555555555" width="85%">
+            </div>
+            <div id="Autoprotolyse" class="step" data-x="2000">
+                <h1 class="title">Autoprotolyse</h1>
+                <p class="substep text">-Eigenleitfähigkeit durch die Übertragung von Protonen</p>
+                <div class="substep"><img class='imagec' src="images/123.jpeg" alt="5555555555555555" width="85%"></div>
+            </div>
+            <div id="Massenwirkungsgesetz" class="step" data-rotate-x="90">
+                <h1 class="title">Massenwirkungsgesetz</h1>
+                <img class="substep imagec" src="images/Untitled picture.png" alt="" width="40%">
+                <p class="substep textc">c(H<sub>2</sub>0) = 55,6 mol l<sup>-1</sup></p>
+                <img class="substep imagec" src="images/kw.jpeg" alt="" width="60%">
+                <p class="substep text">Dieser Wert wird dann als Konstante verwendet, um K<sub>w</sub> (Ionenprodukt) zu bilden.</p>
+            </div>
+            <div id="Massenwirkungsgesetz2" class="step" data-x="-2500" data-rotate-y="90">
+                <p class="text">bei Raumtemperatur beträgt sowohl die Konzentration von H<sub>3</sub>O<sup>+</sup> als auch die von OH<sup>-</sup> 10<sup>-7</sup> mol l<sup>-1</sup>
+                </p>
+                <img class="substep imagec" src="images/kw2.jpeg" alt="" width="85%">
+            </div>
+            <div id="History" class="step" data-x="2000" data-y="3000">
+                <h1 class="title">Historische Hintergrund</h1>
+                <img class="imagec" src="images/sorensen.jpeg" alt="" width="85%">
+            </div>
+            <div class="step" id="pH-Wert1" data-rotate-y="180" data-z="2000">
+                <h1 class="title">pH-Wert</h1>
+                <p class="substep textcd"><span style="color: red;">Säure</span> - Neutral - <span style="color: blue;">Basen</span></p>
+                <img class="substep imagec" style="width: 55%;" src="images/meter.png" alt="56789">
+                <p class="substep textc">von Konzentration der H<sub>3</sub>O<sup>+</sup>-Ionen abhängig</p>
+            </div>
+            <div id="pH-Wert2" class="step" data-rotate-y="270" data-z="1000" data-x="2500" data-y="3000">
+                <div class="substep textcd">
+                    <p class="textcd Same">c(H<sub>3</sub>O<sup>+</sup>) > 10<sup>-7</sup> mol l<sup>-1</sup></p>
+                    <p class="substep textcd Same"> ---&gt; <span style="color: red;">sauer</span></p>
                 </div>
+                <div class="substep textcd">
+                    <p class="textcd Same"><br>c(H<sub>3</sub>O<sup>+</sup>) = 10<sup>-7</sup> mol l<sup>-1</sup></p>
+                    <p class="substep textcd Same">---&gt; Neutral </p>
+                </div>
+                <div class="substep textcd">
+                    <p class="textcd Same"><br>(H<sub>3</sub>O<sup>+</sup>) &lt; 10<sup>-7</sup> mol l<sup>-1</sup></p>
+                    <p class="substep textcd Same">---&gt; <span style="color: blue;">basisch</span></p>
+                </div>
+            </div>
+            <div id="pH-Wert3" class="step" data-rotate-z="90" data-rotate-x="90" data-x="2000" data-y="3220">
+                <img class="imagec" width="790" src="images/log1.jpeg" alt="5555555555555555555">
+                <img class="substep imagec" width="790" src="images/log2.jpeg" alt="435345">
+            </div>
+            <div id="skala" class="step" data-rotate-z="90" data-rotate-x="90" data-x="2000" data-y="5500">
+                <h1 class="title">pH-Skala</h1>
+                <img class="substep imagec" width="800" src="images/sdauer.png" alt="">
+                <p class="substep textc Same">Salzsäure: c(H<sub>3</sub>O<sup>+</sup>) = 0,1 mol l<sup>-1</sup> </p>
+                <p class="substep textc Same">; pH-Wert = <span style="color: crimson;">1</span></p>
+                <p class="substep textc Same"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c(H<sub>3</sub>O<sup>+</sup>) = 1 mol l<sup>-1</sup></p>
+                <p class="substep textc Same">; pH-Wert = <span style="color: red;">0</span> </p>
+                <p class="substep textc Same"><br><br>Natronlauge: pH-Wert = <span style="color: blue;">14</span> </p>
+                <p class="substep textc Same">; c(H<sub>3</sub>O<sup>+</sup>) = 10<sup>-14</sup> mol l<sup>-1</sup>  </p>
+            </div>
+            <div id="pOH" class="step">
+                <h1 class="title">pOH-Wert</h1>
+                <img class="imagec" width="800" src="images/poh skala.png" alt="">
+                <img class="substep imagec" width="400" src="images/lg1.jpeg" alt="">
+                <img class="substep imagec" width="400" src="images/lg2.jpeg" alt="">
+            </div>
+            <div id="beziehung" class="step" data-z="2000" data-x="0" data-y="3000">
+                <h1 class="title">Beziehung</h1>
+                <h1 class="textcd">Ionenprodukt (bei T konstant): pH + pOH = 14 bei 25°C</h1>
+            </div>
+            <div id="overview" class="step" data-x="0" data-y="3000" data-z="0" data-rotate-y="-20" data-scale="9"></div>
+            <div id="quelle" class="step" data-y="6000" data-z="20000">
+                <h1 class="title">Quellen</h1>
+                <p class="textq">
+                    "Westermann Chemie Heute"
+                    <a href="https://www.leifichemie.de/anorganische-chemie/saeuren-und-basen/grundwissen/ph-wert">leifechemie</a>
+                    <a href="https://core.ac.uk/download/pdf/14517358.pdf">Core</a>
+                    <a href="https://en.wikipedia.org/wiki/PH">Wiki</a>
+                    <a href="https://www.toppr.com/ask/question/explain-importance-of-ph-in-everyday-life/">Toppr</a>
+                    <a href="https://studyflix.de/chemie/ph-wert-einfach-erklart-3987">studyflix</a>
+                </p>
             </div>
         </div>
 
